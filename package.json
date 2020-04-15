@@ -12,6 +12,7 @@
   "dependencies": {
     "alert-node": "^3.0.11",
     "body-parser": "^1.19.0",
+    "curl": "^0.1.4",
     "ejs": "^3.0.2",
     "express": "^4.17.1",
     "jQuery": "^1.7.4",

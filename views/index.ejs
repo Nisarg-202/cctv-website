@@ -18,7 +18,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="first-navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light design" id="first-navbar">
     <a class="navbar-brand" href="#"><i class="fas fa-camera fa-3x"></i></a>
     <button id="navbar-anchor" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,9 +31,9 @@
     </div>
   </nav>
 
-  <div id="first-navbar" class="outer">
+  <div id="first-navbar" class="outer design">
     <div class="inner">
-      <h1 id="heading">Welcome to our cctv camera store</h1>
+      <h1 id="heading" style="">Welcome to our cctv camera store</h1>
       <form class="form-section" action="/" method="post">
         <input id="input" type="email" name="email" value="" class="form-control" placeholder="Enter your email address" required autocomplete="off">
           <button type="submit" id="first-button" class="button btn btn-outline-danger">Subscribe Me!</button>
@@ -41,8 +41,8 @@
     </div>
   </div>
 
-<h2 id="first-button">Our Items</h2>
-  <div class="row top">
+<h2 id="first-button" class="design">Our Items</h2>
+  <div class="row top design">
     <div class="col-lg-6 col-md-12 col-sm-12">
       <img class="first" src="images/domecamera.jpg" alt="dome-camera-img">
       <h4 id="text" class="price-left">$ 1</h4>
@@ -53,7 +53,7 @@
     </div>
   </div>
 
-  <div class="row top">
+  <div class="row top design">
     <div class="col-lg-6 col-md-12 col-sm-12">
       <h2 id="first-button">Bullet Camera</h2>
       <h4 id="text">Bullet cameras are long and cylindrical in shape and are ideal for outdoor use. Their strengths lie specifically in applications which require long distance viewing. Installed within protective casings, the cameras are shielded against dust, dirt and other natural elements. The cameras can easily be mounted with a mounting bracket, and come fitted with either fixed or varifocal lenses depending on the requirements of its intended application.</h4>
@@ -64,7 +64,7 @@
       </div>
   </div>
 
-  <div class="row top">
+  <div class="row top design">
     <div class="col-lg-6 col-md-12 col-sm-12">
       <img class="first" src="images/cmountcamera.jpg" alt="cmount-camera-img">
       <h4 id="text" class="price-left">$ 15</h4>
@@ -75,7 +75,7 @@
     </div>
   </div>
 
-  <div class="row top">
+  <div class="row top design">
     <div class="col-lg-6 col-md-12 col-sm-12">
       <h2 id="first-button">Day/Night Camera</h2>
       <h4 id="text">Capable of operating in both normal and poorly lit environments, these cameras benefit from not requiring inbuilt infrared illuminators as they can capture clear video images in the dark thanks to their extra sensitive imaging chips. For this reason, these cameras are ideal for outdoor surveillance applications in which IR cameras are unable to function optimally.</h4>
@@ -86,7 +86,7 @@
       </div>
   </div>
 
-  <h2 id="first-button" class="review">Customer Review</h2>
+  <h2 id="first-button" class="review design">Customer Review</h2>
 
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="testenomial carousel-inner">
@@ -117,15 +117,28 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<h2 id="first-button">Follow Me</h2>
-<div class="last">
+<h2 id="first-button" class="design">Follow Me</h2>
+<div class="last design">
   <h5 id="text">Hello everyone, I am nisarg. A web developer. If you like this webpage so, subscribe me. Also If you want to make some website so contact me.</h5>
 <a href="https://twitter.com/nisarg70820916"><i id="social-icon" class="icon fab fa-twitter fa-2x"></i></a>
   <a href="https://www.facebook.com/nisarg.prajapati.750"><i id="social-icon" class="icon fab fa-facebook-f fa-2x"></i></a>
   <a href="https://www.instagram.com/nisargprajapati202"><i id="social-icon" class="icon fab fa-instagram fa-2x"></i></a>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="index.js" charset="utf-8"></script>
+
+
+      <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
+
+<script>
+
+$(".design").slideUp(1, function() {
+  $(".design").css("visibility", "visible");
+  $(".design").slideDown(1000);
+});
+
+
+
+</script>
 </body>
 
 </html>
