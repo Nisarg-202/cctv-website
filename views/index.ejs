@@ -36,7 +36,8 @@
       <h1 id="heading" style="">Welcome to our cctv camera store</h1>
       <form class="form-section" action="/" method="post">
         <input id="input" type="email" name="email" value="" class="form-control" placeholder="Enter your email address" required autocomplete="off">
-          <button type="submit" id="first-button" class="button btn btn-outline-danger">Subscribe Me!</button>
+          <button type="submit" id="first-button" onclick="setHeading()" class="button btn btn-outline-danger">Subscribe Me!</button>
+          <p id="p"></p>
       </form>
     </div>
   </div>
@@ -131,12 +132,11 @@
 
 <script>
 
-$(".design").slideUp(1, function() {
-  $(".design").css("visibility", "visible");
-  $(".design").slideDown(1000);
-});
-
-
+function setHeading() {
+  if($("#input").val()) {
+    alert("Thank you for subscribe me");
+  }
+}
 
 </script>
 </body>
