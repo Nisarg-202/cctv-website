@@ -8,7 +8,10 @@
 a.nav-item {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
+}
 
+.design {
+  visibility: hidden;
 }
 
 h3,p {

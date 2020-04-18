@@ -65,7 +65,7 @@
       </div>
   </div>
 
-  <div class="row top design">
+  <div class="row top">
     <div class="col-lg-6 col-md-12 col-sm-12">
       <img class="first" src="images/cmountcamera.jpg" alt="cmount-camera-img">
       <h4 id="text" class="price-left">$ 15</h4>
@@ -76,7 +76,7 @@
     </div>
   </div>
 
-  <div class="row top design">
+  <div class="row top">
     <div class="col-lg-6 col-md-12 col-sm-12">
       <h2 id="first-button">Day/Night Camera</h2>
       <h4 id="text">Capable of operating in both normal and poorly lit environments, these cameras benefit from not requiring inbuilt infrared illuminators as they can capture clear video images in the dark thanks to their extra sensitive imaging chips. For this reason, these cameras are ideal for outdoor surveillance applications in which IR cameras are unable to function optimally.</h4>
@@ -87,7 +87,7 @@
       </div>
   </div>
 
-  <h2 id="first-button" class="review design">Customer Review</h2>
+  <h2 id="first-button" class="review">Customer Review</h2>
 
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="testenomial carousel-inner">
@@ -118,14 +118,32 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<h2 id="first-button" class="design">Follow Me</h2>
+<h2 id="first-button">Follow Me</h2>
 <div class="last design">
   <h5 id="text">Hello everyone, I am nisarg. A web developer. If you like this webpage so, subscribe me. Also If you want to make some website so contact me.</h5>
 <a href="https://twitter.com/nisarg70820916"><i id="social-icon" class="icon fab fa-twitter fa-2x"></i></a>
   <a href="https://www.facebook.com/nisarg.prajapati.750"><i id="social-icon" class="icon fab fa-facebook-f fa-2x"></i></a>
   <a href="https://www.instagram.com/nisargprajapati202"><i id="social-icon" class="icon fab fa-instagram fa-2x"></i></a>
 </div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
+<script>
+
+  $(".design").slideUp(1, function() {
+    $(".design").css("visibility", "visible");
+    $(".design").slideDown(1000);
+  });
+
+  function setHeading() {
+    var des = $("#input").val();
+    if(des) {
+        alert("Thank you for subscribe me");
+    } else {
+        $("#p").text("Please subscribe me!");
+    }
+
+  }
+</script>
 </body>
 
 </html>

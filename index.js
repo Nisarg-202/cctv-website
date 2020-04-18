@@ -1,5 +1,3 @@
-
-
 //jshint esversion: 6
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -21,7 +19,7 @@ app.post("/", function(req, res) {
     service: 'gmail',
     auth: {
       user: 'nisargprajapati202@gmail.com',
-      pass: 'Nkp@Nkp23'
+      pass: 'nisarg@2.com'
     }
   });
 
