@@ -10,8 +10,9 @@ a.nav-item {
   font-size: 20px;
 }
 
-.design {
+.animation1, .animation2 {
   visibility: hidden;
+  position: relative;
 }
 
 h3,p {

@@ -33,7 +33,7 @@
 
   <div id="first-navbar" class="outer design">
     <div class="inner">
-      <h1 id="heading" style="">Welcome to our cctv camera store</h1>
+      <h1 id="heading" class="animation1" style="">Welcome to our cctv camera store</h1>
       <form class="form-section" action="/" method="post">
         <input id="input" type="email" name="email" value="" class="form-control" placeholder="Enter your email address" required autocomplete="off">
           <button type="submit" id="first-button" onclick="setHeading()" class="button btn btn-outline-danger">Subscribe Me!</button>
@@ -45,22 +45,22 @@
 <h2 id="first-button" class="design">Our Items</h2>
   <div class="row top design">
     <div class="col-lg-6 col-md-12 col-sm-12">
-      <img class="first" src="images/domecamera.jpg" alt="dome-camera-img">
+      <img class="first animation1" src="images/domecamera.jpg" alt="dome-camera-img">
       <h4 id="text" class="price-left">$ 1</h4>
     </div>
     <div class="col-lg-6 col-md-12 col-sm-12">
       <h2 id="first-button">Internal and External Dome Camera</h2>
-      <h4 id="text">The dome camera is one most commonly used for indoor and outdoor security and surveillance. The shape of the camera makes it difficult for onlookers to tell which way the camera is facing, which is a strong piece of design, deterring criminals by creating an air of uncertainty.</h4>
+      <h4 id="text" class="animation2">The dome camera is one most commonly used for indoor and outdoor security and surveillance. The shape of the camera makes it difficult for onlookers to tell which way the camera is facing, which is a strong piece of design, deterring criminals by creating an air of uncertainty.</h4>
     </div>
   </div>
 
   <div class="row top design">
     <div class="col-lg-6 col-md-12 col-sm-12">
       <h2 id="first-button">Bullet Camera</h2>
-      <h4 id="text">Bullet cameras are long and cylindrical in shape and are ideal for outdoor use. Their strengths lie specifically in applications which require long distance viewing. Installed within protective casings, the cameras are shielded against dust, dirt and other natural elements. The cameras can easily be mounted with a mounting bracket, and come fitted with either fixed or varifocal lenses depending on the requirements of its intended application.</h4>
+      <h4 id="text" class="animation1">Bullet cameras are long and cylindrical in shape and are ideal for outdoor use. Their strengths lie specifically in applications which require long distance viewing. Installed within protective casings, the cameras are shielded against dust, dirt and other natural elements. The cameras can easily be mounted with a mounting bracket, and come fitted with either fixed or varifocal lenses depending on the requirements of its intended application.</h4>
     </div>
     <div class="col-lg-6 col-md-12 col-sm-12">
-          <img class="second" src="images/bulletcamera.jpg" alt="bullet-camera-img">
+          <img class="second animation2" src="images/bulletcamera.jpg" alt="bullet-camera-img">
           <h4 id="text" class="price-right">$ 5</h4>
       </div>
   </div>
@@ -129,10 +129,25 @@
 
 <script>
 
-  $(".design").slideUp(1, function() {
-    $(".design").css("visibility", "visible");
-    $(".design").slideDown(1000);
-  });
+$(".animation1").animate({
+  right: "1000px"
+}, 1);
+
+$(".animation2").animate({
+  left: "1000px"
+}, 1);
+
+$(".animation1").css('visibility', 'visible');
+$(".animation2").css('visibility', 'visible');
+
+$(".animation1").animate({
+  left: "20px"
+}, 1500);
+
+$(".animation2").animate({
+  left: "20px"
+}, 1500);
+
 
   function setHeading() {
     var des = $("#input").val();
