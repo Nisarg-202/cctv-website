@@ -19,7 +19,7 @@ app.post("/", function(req, res) {
     service: 'gmail',
     auth: {
       user: 'nisargprajapati202@gmail.com',
-      pass: 'nisarg@2.com'
+      pass: ''
     }
   });
 
